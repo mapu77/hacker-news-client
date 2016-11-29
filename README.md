@@ -1,22 +1,10 @@
+# README
+This is a project for `Aplicacions i Serveis Web` subject from the `Enginyeria del Software` degree of the [Barcelona School Of Informatics](http://www.fib.upc.edu/en.html). Our version of Hacker-News is available at: 
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+It's a Angular 1.x web client application that consumes the [Hacker-News API](https://github.com/mapu77/hacker-news/blob/master/api/api.yaml) we created.
 
-
-Welcome to your Node.js project on Cloud9 IDE!
-
-This chat example showcases how to use `socket.io` with a static `express` server.
-
-## Running the server
-
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
-
-2) Alternatively you can launch the app from the Terminal:
-
-    $ node server.js
-
-Once the server is running, open the project in the shape of 'https://projectname-username.c9users.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
+It' been created by:
+- [David Aleu](https://github.com/daleu)
+- [Jordi Guiu](https://github.com/guiu23)
+- [Eduard Maura](https://github.com/mapu77)
+- [Arnau Orriols](https://github.com/aog182)
