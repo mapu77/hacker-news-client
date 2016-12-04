@@ -1,100 +1,62 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="Hacker-News">
   <head>
-    <title>Chat Example</title>
+    <title>Hacker News</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
-    <style>
-      body {
-        padding-top: 60px;
-      }
-    </style>
-    <script>
-      function ChatController($scope) {
-        var socket = io.connect();
-
-        $scope.messages = [];
-        $scope.roster = [];
-        $scope.name = '';
-        $scope.text = '';
-
-        socket.on('connect', function () {
-          $scope.setName();
+    <link rel="stylesheet" href="/css/angular-material.min.css"/>
+    <script src="/js/angular.min.js"></script>
+  	<script src="/js/angular-animate.min.js"></script>
+  	<script src="/js/angular-aria.min.js"></script>
+  	<script src="/js/angular-material.min.js"></script>
+  	<script>
+  		angular.module('Hacker-News',['ngMaterial'])
+        .config(function($mdThemingProvider) {
+          $mdThemingProvider.theme('hacker')
+            .primaryPalette('orange', {
+              'default': '800', // by default use shade 400 from the pink palette for primary intentions
+              'hue-1': '700', // use shade 100 for the <code>md-hue-1</code> class
+              'hue-2': '500' // use shade 600 for the <code>md-hue-2</code> class
+            })
+            // If you specify less than all of the keys, it will inherit from the
+            // default shades
+            .accentPalette('brown', {
+              'default': 'A200' // use shade 200 for default, and keep all other shades the same
+            })
+            
+            .backgroundPalette('grey', {
+              'default': '200'
+            });
         });
-
-        socket.on('message', function (msg) {
-          $scope.messages.push(msg);
-          $scope.$apply();
-        });
-
-        socket.on('roster', function (names) {
-          $scope.roster = names;
-          $scope.$apply();
-        });
-
-        $scope.send = function send() {
-          console.log('Sending message:', $scope.text);
-          socket.emit('message', $scope.text);
-          $scope.text = '';
-        };
-
-        $scope.setName = function setName() {
-          socket.emit('identify', $scope.name);
-        };
-      }
-    </script>
+	</script>
   </head>
   <body>
-    <div class="container" ng-controller="ChatController">
-      <div class="navbar navbar-fixed-top navbar-inverse">
-        <div class="navbar-inner">
-          <div class="pull-right">
-            <a href="https://c9.io" class="brand">Cloud9 IDE</a>
-          </div>
-        </div>
+    <div class="container" layout="row" md-colors="{background: 'hacker-primary'}"  layout-align="space-between center">
+      <div>
+        <md-button arial-label="Home">Home</md-button>
+        <md-button arial-label="News">Newest</md-button>
+        <md-button arial-label="Ask">Ask</md-button>
+        <md-button arial-label="Submit">Submit</md-button>
       </div>
-      <div class="page-header">
-        <h1>Chat Example</h1>
-      </div>
-      <div class="row">
-        <div class="span3">
-          <ul class="nav nav-list well">
-            <li class="nav-header">Local Users</li>
-            <li ng-repeat="user in roster" ng-bind="user">
-            </li>
-          </ul>
-        </div>
-        <div class="span9">
-          <table class="table table-striped table-bordered">
-            <thead>
-              <tr>
-                <th class="span2">Name</th>
-                <th class="span7">Text</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr ng-repeat="msg in messages">
-                <td class="span2" ng-bind="msg.name"></td>
-                <td class="span7" ng-bind="msg.text"></td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="row controls">
-            <form ng-submit="send()">
-              <div class="span2"><input type="text" class="input-block-level" ng-model="name" ng-change="setName()" placeholder="Your Name"></div>
-              <div class="input-append span7">
-                <input type="text" class="span6" ng-model="text" placeholder="Message">
-                <input type="submit" class="span1 btn btn-primary" value="Send" ng-disabled="!text">
-              </div>
-            </form>
-          </div>
-        </div>
+      <div class="nav-buttons">
+          <md-button class="md-icon-button" aria-label="SignIn">
+            <md-icon md-svg-icon="/img/googlelogo.svg" aria-label="SignIn"></md-icon>
+          </md-button>
       </div>
     </div>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/angular.min.js"></script>
+      <md-content id="content" md-colors="{background: 'hacker-background'}">
+        <md-list class="md-dense" flex>
+          <md-list-item ng-click="" layout-padding>
+            <div class="md-headline">1.</div>
+            <div class="md-list-item-text" layout="column">
+              <p class="md-body">Title</p>
+              <p class="md-caption">URL</p>
+              <p class="md-caption">A long time ago..</p>
+            </div>
+            <md-button class="md-icon-button">
+              <md-icon md-svg-icon="/img/star.svg" ng-style="{color: 'hacker-accent'}" aria-label="star"></ng-icon>
+            </md-button>
+          </md-list-item>
+        </md-list>
+			</md-content>
   </body>
 </html>
