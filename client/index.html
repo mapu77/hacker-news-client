@@ -1,62 +1,27 @@
 <!doctype html>
-<html lang="en" ng-app="Hacker-News">
+<html lang="en">
   <head>
     <title>Hacker News</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/angular-material.min.css"/>
-    <script src="/js/angular.min.js"></script>
-  	<script src="/js/angular-animate.min.js"></script>
-  	<script src="/js/angular-aria.min.js"></script>
-  	<script src="/js/angular-material.min.js"></script>
-  	<script>
-  		angular.module('Hacker-News',['ngMaterial'])
-        .config(function($mdThemingProvider) {
-          $mdThemingProvider.theme('hacker')
-            .primaryPalette('orange', {
-              'default': '800', // by default use shade 400 from the pink palette for primary intentions
-              'hue-1': '700', // use shade 100 for the <code>md-hue-1</code> class
-              'hue-2': '500' // use shade 600 for the <code>md-hue-2</code> class
-            })
-            // If you specify less than all of the keys, it will inherit from the
-            // default shades
-            .accentPalette('brown', {
-              'default': 'A200' // use shade 200 for default, and keep all other shades the same
-            })
-            
-            .backgroundPalette('grey', {
-              'default': '200'
-            });
-        });
-	</script>
+    <link rel="stylesheet" href="/js/angular-material/angular-material.min.css"/>
+    
+    <script src="/js/angular/angular.min.js"></script>
+    <script src="/js/angular-animate/angular-animate.min.js"></script>
+  	<script src="/js/angular-aria/angular-aria.min.js"></script>
+  	<script src="/js/angular-material/angular-material.min.js"></script>
+  	<script src="/js/angular-messages/angular-messages.min.js"></script>
+  	<script src="/js/angular-route/angular-route.min.js"></script>
+  	<script src="/config.js"></script>
+  	<script src="/main.controller.js"></script>
+  	<script src="/contributions/contributions.controller.js"></script> 
   </head>
-  <body>
-    <div class="container" layout="row" md-colors="{background: 'hacker-primary'}"  layout-align="space-between center">
-      <div>
-        <md-button arial-label="Home">Home</md-button>
-        <md-button arial-label="News">Newest</md-button>
-        <md-button arial-label="Ask">Ask</md-button>
-        <md-button arial-label="Submit">Submit</md-button>
-      </div>
-      <div class="nav-buttons">
-          <md-button class="md-icon-button" aria-label="SignIn">
-            <md-icon md-svg-icon="/img/googlelogo.svg" aria-label="SignIn"></md-icon>
-          </md-button>
-      </div>
+  <body ng-app="HackerNews">
+  <div layout="row" layout-align="center none">
+    <div flex="75">  
+      <div ng-include="'header.html'" md-colors="{background: 'hacker-primary'}" layout-align="space-between"></div>
+      <div ng-view md-colors="{background: 'hacker-background'}"></div>
     </div>
-      <md-content id="content" md-colors="{background: 'hacker-background'}">
-        <md-list class="md-dense" flex>
-          <md-list-item ng-click="" layout-padding>
-            <div class="md-headline">1.</div>
-            <div class="md-list-item-text" layout="column">
-              <p class="md-body">Title</p>
-              <p class="md-caption">URL</p>
-              <p class="md-caption">A long time ago..</p>
-            </div>
-            <md-button class="md-icon-button">
-              <md-icon md-svg-icon="/img/star.svg" ng-style="{color: 'hacker-accent'}" aria-label="star"></ng-icon>
-            </md-button>
-          </md-list-item>
-        </md-list>
-			</md-content>
+  </div>
   </body>
 </html>
+

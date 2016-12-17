@@ -1,0 +1,17 @@
+<div layout="row" ng-controller="mainCtrl">
+    <div flex="70">
+        <md-button arial-label="Home" ng-click="Home()">Home</md-button>
+        <md-button arial-label="News" ng-click="Newest()">Newest</md-button>
+        <md-button arial-label="Ask" ng-click="Ask()">Ask</md-button>
+        <md-button arial-label="Submit" ng-click="Submit()">Submit</md-button>
+    </div>
+    <div flex="25">
+        <md-button aria-label="Profile" ng-click="Profile()">{{ name }}</md-button>
+    </div>
+    <div>
+        <md-button class="md-icon-button" aria-label="SignIn" ng-click="LogIn()">
+            <md-icon md-svg-icon="/img/googlelogo.svg" aria-label="SignIn"></md-icon>
+        </md-button>
+    </div>
+</div>
+</div>
