@@ -24,11 +24,11 @@
         .when('/', {
             templateUrl: 'contributions/contributions.html'
         })
-        .when('newest', {
-            templateUrl: 'contributions/contribtions_newest.html'
+        .when('/newest', {
+            templateUrl: 'contributions/newest.html'
         })
-        .when('ask', {
-            templateUrl: 'contributions/contribtions_ask.html'
+        .when('/ask', {
+            templateUrl: 'contributions/ask.html'
         })
         .otherwise({
             redirectTo: '/'

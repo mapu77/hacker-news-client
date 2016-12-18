@@ -1,13 +1,13 @@
 (function() {
     angular.module('HackerNews')
-    .controller("contributionCtrl", ContributionCtrl);
+    .controller("askCtrl", AskCtrl);
     
-    ContributionCtrl.$inject = ['$scope', '$http', '$rootScope','$mdDialog'];
+    AskCtrl.$inject = ['$scope', '$http', '$rootScope','$mdDialog'];
     
-    function ContributionCtrl($scope, $http, $rootScope, $mdDialog) {
-        $http.get($rootScope.baseUrl + "/contributions", {headers: {'token': $rootScope.currentUser.token}})
+    function AskCtrl($scope, $http, $rootScope, $mdDialog) {
+        $http.get($rootScope.baseUrl + "/contributions?type=ask", {headers: {'token': $rootScope.currentUser.token}})
         .then(function(response) {
-            $scope.contributions = response.data;   
+            $scope.contributions = response.data;
         });
         
         $scope.showPrompt = function(ev) {
