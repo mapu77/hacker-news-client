@@ -27,8 +27,14 @@
         .when('/newest', {
             templateUrl: 'contributions/newest.html'
         })
+        .when('/submit', {
+            templateUrl: 'contributions/submit.html'
+        })
         .when('/ask', {
             templateUrl: 'contributions/ask.html'
+        })
+        .when('/contributions/:id', {
+            templateUrl: 'contributions/detail.html'
         })
         .otherwise({
             redirectTo: '/'
