@@ -1,0 +1,17 @@
+<md-list ng-controller="threadCtrl" ng-cloak>
+    <md-list-item class="md-3-line" ng-repeat="thread in comments">
+        <div class="md-list-item-text" layout="column">
+            <p>{{ 'by ' + thread.user.more_info.name + ' | on: ' +
+                  (thread.created_at | date:'dd/MM/yyyy HH:mm') }}</p> 
+            <h4>{{ thread.content }}</h4>
+        </div>
+    </md-list-item>   
+    <md-list-item class="md-3-line" ng-repeat="thread in replies">
+        <div class="md-list-item-text" layout="column">
+            <p>{{ 'by ' + thread.user.more_info.name + 
+                  (contribution.created_at | date:'dd/MM/yyyy HH:mm') + ' | on:' +
+                  thread.comment.id }}</p> 
+            <h4>{{ thread.content }}</h4>
+        </div>
+    </md-list-item>  
+</md-list>

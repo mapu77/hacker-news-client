@@ -1,7 +1,7 @@
 (function() {
   'use strict';
-  angular.module('HackerNews', ['ngMaterial', 'ngRoute'])
-    .config(function($mdThemingProvider, $routeProvider) {
+  angular.module('HackerNews', ['ngMaterial', 'ngRoute', 'googleplus'])
+    .config(function($mdThemingProvider, $routeProvider, GooglePlusProvider) {
       // Colors configuration
       $mdThemingProvider.theme('hacker')
         .primaryPalette('orange', {
@@ -27,6 +27,9 @@
         .when('/newest', {
             templateUrl: 'contributions/newest.html'
         })
+        .when('/threads', {
+            templateUrl: 'contributions/threads.html'
+        })
         .when('/submit', {
             templateUrl: 'contributions/submit.html'
         })
@@ -35,6 +38,9 @@
         })
         .when('/contributions/:id', {
             templateUrl: 'contributions/detail.html'
+        })
+        .when('/comments/:id', {
+            templateUrl: 'contributions/reply.html'
         })
         .otherwise({
             redirectTo: '/'

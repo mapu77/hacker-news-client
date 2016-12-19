@@ -1,0 +1,230 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.6.1/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.6.1/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   'angular-google-plus' ]
+2 info using npm@2.15.9
+3 info using node@v4.6.1
+4 verbose install initial load of /home/ubuntu/workspace/package.json
+5 warn package.json Hacker-News@0.0.0 No repository field.
+6 warn package.json Hacker-News@0.0.0 No license field.
+7 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/angular/package.json
+8 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/angular-animate/package.json
+9 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/angular-aria/package.json
+10 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/angular-material/package.json
+11 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/angular-messages/package.json
+12 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/angular-route/package.json
+13 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/async/package.json
+14 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/express/package.json
+15 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/save/package.json
+16 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/socket.io/package.json
+17 info package.json angular-material@1.1.1 No license field.
+18 info package.json socket.io@0.9.17 No license field.
+19 info package.json express@3.2.6 No license field.
+20 info package.json async@0.2.10 No license field.
+21 verbose readDependencies loading dependencies from /home/ubuntu/workspace/package.json
+22 silly cache add args [ 'angular-google-plus', null ]
+23 verbose cache add spec angular-google-plus
+24 silly cache add parsed spec Result {
+24 silly cache add   raw: 'angular-google-plus',
+24 silly cache add   scope: null,
+24 silly cache add   name: 'angular-google-plus',
+24 silly cache add   rawSpec: '',
+24 silly cache add   spec: 'latest',
+24 silly cache add   type: 'tag' }
+25 silly addNamed angular-google-plus@latest
+26 verbose addNamed "latest" is being treated as a dist-tag for angular-google-plus
+27 info addNameTag [ 'angular-google-plus', 'latest' ]
+28 silly mapToRegistry name angular-google-plus
+29 silly mapToRegistry using default registry
+30 silly mapToRegistry registry https://registry.npmjs.org/
+31 silly mapToRegistry data Result {
+31 silly mapToRegistry   raw: 'angular-google-plus',
+31 silly mapToRegistry   scope: null,
+31 silly mapToRegistry   name: 'angular-google-plus',
+31 silly mapToRegistry   rawSpec: '',
+31 silly mapToRegistry   spec: 'latest',
+31 silly mapToRegistry   type: 'tag' }
+32 silly mapToRegistry uri https://registry.npmjs.org/angular-google-plus
+33 verbose addNameTag registry:https://registry.npmjs.org/angular-google-plus not in flight; fetching
+34 verbose request uri https://registry.npmjs.org/angular-google-plus
+35 verbose request no auth needed
+36 info attempt registry request try #1 at 6:14:40 PM
+37 verbose request id 7031efb727fd80b3
+38 http request GET https://registry.npmjs.org/angular-google-plus
+39 http 200 https://registry.npmjs.org/angular-google-plus
+40 verbose headers { server: 'nginx/1.10.1',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'last-modified': 'Wed, 30 Nov 2016 09:08:53 GMT',
+40 verbose headers   etag: 'W/"583e9725-f4a"',
+40 verbose headers   'content-encoding': 'gzip',
+40 verbose headers   'cache-control': 'max-age=300',
+40 verbose headers   'content-length': '1450',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   date: 'Mon, 19 Dec 2016 18:14:40 GMT',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   age: '0',
+40 verbose headers   connection: 'keep-alive',
+40 verbose headers   'x-served-by': 'cache-lhr6348-LHR',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1482171280.243031,VS0,VE110',
+40 verbose headers   vary: 'Accept-Encoding' }
+41 silly get cb [ 200,
+41 silly get   { server: 'nginx/1.10.1',
+41 silly get     'content-type': 'application/json',
+41 silly get     'last-modified': 'Wed, 30 Nov 2016 09:08:53 GMT',
+41 silly get     etag: 'W/"583e9725-f4a"',
+41 silly get     'content-encoding': 'gzip',
+41 silly get     'cache-control': 'max-age=300',
+41 silly get     'content-length': '1450',
+41 silly get     'accept-ranges': 'bytes',
+41 silly get     date: 'Mon, 19 Dec 2016 18:14:40 GMT',
+41 silly get     via: '1.1 varnish',
+41 silly get     age: '0',
+41 silly get     connection: 'keep-alive',
+41 silly get     'x-served-by': 'cache-lhr6348-LHR',
+41 silly get     'x-cache': 'MISS',
+41 silly get     'x-cache-hits': '0',
+41 silly get     'x-timer': 'S1482171280.243031,VS0,VE110',
+41 silly get     vary: 'Accept-Encoding' } ]
+42 verbose get saving angular-google-plus to /home/ubuntu/.npm/registry.npmjs.org/angular-google-plus/.cache.json
+43 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+44 silly addNameTag next cb for angular-google-plus with tag latest
+45 silly addNamed angular-google-plus@0.1.2
+46 verbose addNamed "0.1.2" is a plain semver version for angular-google-plus
+47 silly mapToRegistry name angular-google-plus
+48 silly mapToRegistry using default registry
+49 silly mapToRegistry registry https://registry.npmjs.org/
+50 silly mapToRegistry data Result {
+50 silly mapToRegistry   raw: 'angular-google-plus',
+50 silly mapToRegistry   scope: null,
+50 silly mapToRegistry   name: 'angular-google-plus',
+50 silly mapToRegistry   rawSpec: '',
+50 silly mapToRegistry   spec: 'latest',
+50 silly mapToRegistry   type: 'tag' }
+51 silly mapToRegistry uri https://registry.npmjs.org/angular-google-plus
+52 verbose addRemoteTarball https://registry.npmjs.org/angular-google-plus/-/angular-google-plus-0.1.2.tgz not in flight; adding
+53 verbose addRemoteTarball [ 'https://registry.npmjs.org/angular-google-plus/-/angular-google-plus-0.1.2.tgz',
+53 verbose addRemoteTarball   'c50ef5d6fa7d062db47db44364de596351713477' ]
+54 info retry fetch attempt 1 at 6:14:40 PM
+55 info attempt registry request try #1 at 6:14:40 PM
+56 http fetch GET https://registry.npmjs.org/angular-google-plus/-/angular-google-plus-0.1.2.tgz
+57 http fetch 200 https://registry.npmjs.org/angular-google-plus/-/angular-google-plus-0.1.2.tgz
+58 silly fetchAndShaCheck shasum c50ef5d6fa7d062db47db44364de596351713477
+59 verbose addTmpTarball /tmp/npm-23755-e6487a65/registry.npmjs.org/angular-google-plus/-/angular-google-plus-0.1.2.tgz not in flight; adding
+60 verbose addTmpTarball already have metadata; skipping unpack for angular-google-plus@0.1.2
+61 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+62 silly cache afterAdd angular-google-plus@0.1.2
+63 verbose afterAdd /home/ubuntu/.npm/angular-google-plus/0.1.2/package/package.json not in flight; writing
+64 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+65 verbose afterAdd /home/ubuntu/.npm/angular-google-plus/0.1.2/package/package.json written
+66 silly install resolved [ { name: 'angular-google-plus',
+66 silly install resolved     version: '0.1.2',
+66 silly install resolved     description: 'A angular module which handles the login with the Google+ API',
+66 silly install resolved     main: 'Gruntfile.js',
+66 silly install resolved     scripts: { test: 'grunt karma:ci' },
+66 silly install resolved     repository:
+66 silly install resolved      { type: 'git',
+66 silly install resolved        url: 'git://github.com/mrzmyr/angular-google-plus.git' },
+66 silly install resolved     keywords: [ 'google', 'plus', 'angular', 'login', 'api' ],
+66 silly install resolved     bugs: { url: 'https://github.com/mrzmyr/angular-google-plus/issues' },
+66 silly install resolved     author: { name: 'Moritz Meyer', email: 'm0ritz.m3yer@gmail.com' },
+66 silly install resolved     license: 'MIT',
+66 silly install resolved     gitHead: 'e6875b80904f553b9f6fddae1efce1d5d7008483',
+66 silly install resolved     devDependencies:
+66 silly install resolved      { grunt: '~0.4.1',
+66 silly install resolved        'grunt-contrib-jshint': '^0.11.2',
+66 silly install resolved        'grunt-contrib-uglify': '^0.9.1',
+66 silly install resolved        'grunt-contrib-watch': '~0.6.1',
+66 silly install resolved        'grunt-karma': '^0.12.0',
+66 silly install resolved        'jasmine-core': '^2.3.4',
+66 silly install resolved        karma: '^0.13.9',
+66 silly install resolved        'karma-chrome-launcher': '^0.2.0',
+66 silly install resolved        'karma-coffee-preprocessor': '^0.3.0',
+66 silly install resolved        'karma-firefox-launcher': '~0.1.0',
+66 silly install resolved        'karma-html2js-preprocessor': '~0.1.0',
+66 silly install resolved        'karma-jasmine': '~0.3.0',
+66 silly install resolved        'karma-opera-launcher': '^0.3.0',
+66 silly install resolved        'karma-phantomjs-launcher': '^0.2.0',
+66 silly install resolved        'karma-safari-launcher': '~0.1.1',
+66 silly install resolved        'karma-script-launcher': '~0.1.0',
+66 silly install resolved        phantomjs: '^1.9.17' },
+66 silly install resolved     homepage: 'https://github.com/mrzmyr/angular-google-plus',
+66 silly install resolved     _id: 'angular-google-plus@0.1.2',
+66 silly install resolved     _shasum: 'c50ef5d6fa7d062db47db44364de596351713477',
+66 silly install resolved     _from: 'angular-google-plus@latest',
+66 silly install resolved     _npmVersion: '2.11.3',
+66 silly install resolved     _nodeVersion: '0.12.7',
+66 silly install resolved     _npmUser: { name: 'mrzmyr', email: 'm0ritz.m3yer@gmail.com' },
+66 silly install resolved     dist:
+66 silly install resolved      { shasum: 'c50ef5d6fa7d062db47db44364de596351713477',
+66 silly install resolved        tarball: 'https://registry.npmjs.org/angular-google-plus/-/angular-google-plus-0.1.2.tgz' },
+66 silly install resolved     maintainers: [ [Object] ],
+66 silly install resolved     directories: {},
+66 silly install resolved     _resolved: 'https://registry.npmjs.org/angular-google-plus/-/angular-google-plus-0.1.2.tgz' } ]
+67 info install angular-google-plus@0.1.2 into /home/ubuntu/workspace
+68 info installOne angular-google-plus@0.1.2
+69 verbose installOne of angular-google-plus to /home/ubuntu/workspace not in flight; installing
+70 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+71 verbose lock using /home/ubuntu/.npm/_locks/angular-google-plus-91ce984ee5a41e8c.lock for /home/ubuntu/workspace/node_modules/angular-google-plus
+72 silly install write writing angular-google-plus 0.1.2 to /home/ubuntu/workspace/node_modules/angular-google-plus
+73 verbose unbuild node_modules/angular-google-plus
+74 silly gentlyRm /home/ubuntu/workspace/node_modules/angular-google-plus is being purged from base /home/ubuntu/workspace
+75 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/angular-google-plus
+76 verbose tar unpack /home/ubuntu/.npm/angular-google-plus/0.1.2/package.tgz
+77 verbose tar unpacking to /home/ubuntu/workspace/node_modules/angular-google-plus
+78 silly gentlyRm /home/ubuntu/workspace/node_modules/angular-google-plus is being purged
+79 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/angular-google-plus
+80 silly gunzTarPerm modes [ '755', '644' ]
+81 silly gunzTarPerm extractEntry package.json
+82 silly gunzTarPerm extractEntry .npmignore
+83 silly gunzTarPerm extractEntry README.md
+84 silly gunzTarPerm extractEntry LICENSE
+85 silly gunzTarPerm extractEntry Gruntfile.js
+86 silly gunzTarPerm extractEntry karma.conf.js
+87 silly gunzTarPerm extractEntry bower.json
+88 silly gunzTarPerm extractEntry .travis.yml
+89 silly gunzTarPerm extractEntry CHANGELOG.md
+90 silly gunzTarPerm extractEntry dist/angular-google-plus.js
+91 silly gunzTarPerm extractEntry dist/angular-google-plus.min.js
+92 silly gunzTarPerm extractEntry src/angular-google-plus.js
+93 silly gunzTarPerm extractEntry .jshintrc
+94 silly gunzTarPerm extractEntry test/dom/index.html
+95 silly gunzTarPerm extractEntry test/unit/angular-google-plus.spec.js
+96 verbose write writing to /home/ubuntu/workspace/node_modules/angular-google-plus/package.json
+97 info preinstall angular-google-plus@0.1.2
+98 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/angular-google-plus/package.json
+99 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/angular-google-plus/package.json
+100 silly install resolved []
+101 verbose about to build /home/ubuntu/workspace/node_modules/angular-google-plus
+102 info build /home/ubuntu/workspace/node_modules/angular-google-plus
+103 info linkStuff angular-google-plus@0.1.2
+104 silly linkStuff angular-google-plus@0.1.2 has /home/ubuntu/workspace/node_modules as its parent node_modules
+105 verbose linkBins angular-google-plus@0.1.2
+106 verbose linkMans angular-google-plus@0.1.2
+107 verbose rebuildBundles angular-google-plus@0.1.2
+108 info install angular-google-plus@0.1.2
+109 info postinstall angular-google-plus@0.1.2
+110 verbose unlock done using /home/ubuntu/.npm/_locks/angular-google-plus-91ce984ee5a41e8c.lock for /home/ubuntu/workspace/node_modules/angular-google-plus
+111 verbose validateInstall loading /home/ubuntu/workspace/package.json for validation
+112 verbose stack Error: The package angular@1.6.0 does not satisfy its siblings' peerDependencies requirements!
+112 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/lib/install.js:125:32
+112 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/lib/install.js:268:7
+112 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+112 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+112 verbose stack     at cb (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+112 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+112 verbose stack     at cb (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+112 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+112 verbose stack     at cb (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+112 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+113 verbose cwd /home/ubuntu/workspace
+114 error Linux 4.2.0-c9
+115 error argv "/home/ubuntu/.nvm/versions/node/v4.6.1/bin/node" "/home/ubuntu/.nvm/versions/node/v4.6.1/bin/npm" "i" "angular-google-plus"
+116 error node v4.6.1
+117 error npm  v2.15.9
+118 error code EPEERINVALID
+119 error peerinvalid The package angular@1.6.0 does not satisfy its siblings' peerDependencies requirements!
+119 error peerinvalid Peer angular-material@1.1.1 wants angular@>=1.3 <1.6
+120 verbose exit [ 1, true ]

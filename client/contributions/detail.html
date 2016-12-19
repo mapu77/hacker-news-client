@@ -1,0 +1,38 @@
+<md-content flex layout-padding ng-controller="detailCtrl" md-colors="{background: 'hacker-background'}">
+    <div layout="row" layout-align="center center">
+        <div class="md-3-line" flex="95">
+        <h3>{{ contribution.title }}</h3>
+        <a ng-if="isUrl(contribution.content)" ng-href="{{ contribution.content }}">{{ contribution.content }}</a>
+        <h4 ng-if="!isUrl(contribution.content)">{{ contribution.content }}</h4>
+        <p>{{ contribution.puntuation + ' points by ' + 
+              contribution.user.more_info.name + ' on ' + 
+              (contribution.created_at | date:'dd/MM/yyyy HH:mm') + contribution.comments }}
+        </p> 
+        </div>
+        <div flex>
+            <md-button class="md-icon-button" aria-label="Vote">
+                <md-icon class="md-secondary" ng-click="null" aria-label="Vote" md-svg-icon="img/ic_star.svg"></md-icon>
+            </md-button>
+        </div>
+    </div>
+    <md-divider></md-divider>
+    <md-input-container class="md-block md-primary" md-theme='hacker'>
+        <label>Write a comment</label>
+        <textarea ng-model="new_comment" required md-maxlength="150" rows="5" md-select-on-focus required></textarea>
+    </md-input-container>
+    <div layout="row" layout-align="end center">
+        <md-button md-theme='hacker' class="md-primary" ng-click="addComment(contribution.id)">Submit</md-button>
+    </div>
+    <md-divider></md-divider>
+    <md-list-item class="md-3-line" ng-repeat="comment in comments" ng-click="ShowComment(comment.id)">
+        <div class="md-list-item-text" layout="column">
+            <h4 ng-ref="{{ comment.content }}">{{ comment.content }}</h4>
+            <p>{{ comment.punctuation + ' points by ' + 
+                  comment.user.more_info.name + ' on ' + 
+                  (comment.created_at | date:'dd/MM/yyyy HH:mm') + ' | ' +
+                  comment.replies + ' replies' }}</p> 
+        </div>
+        <md-icon class="md-secondary" ng-click="null" aria-label="Vote" md-svg-icon="img/ic_star.svg"></md-icon>
+        <md-icon class="md-secondary" ng-click="showPrompt($event, comment.id)" aria-label="Reply" md-svg-icon="img/ic_comment.svg"></md-icon>
+    </md-list-item>    
+</md-content>
